@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Beauty - Centro de Estética & Spa</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Iconos de FontAwesome -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Encabezado y Navegación -->
+    <header class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-sparkles"></i> Glow Beauty
+        </div>
+        <nav class="nav-links" id="navLinks">
+            <a href="#inicio"><i class="fa-solid fa-house"></i> Inicio</a>
+            <a href="#servicios"><i class="fa-solid fa-spa"></i> Servicios</a>
+            <a href="#precios"><i class="fa-solid fa-tag"></i> Precios</a>
+            <a href="#reservas"><i class="fa-solid fa-calendar-check"></i> Reservas</a>
+            <a href="#galeria"><i class="fa-solid fa-images"></i> Galería</a>
+            <a href="#opiniones"><i class="fa-solid fa-star"></i> Opiniones</a>
+            <a href="#contacto"><i class="fa-solid fa-envelope"></i> Contacto</a>
+        </nav>
+        <div class="controls-header">
+            <!-- Control de Música -->
+            <button id="btnAudio" class="icon-btn" title="Reproducir/Pausar Música Relax">
+                <i class="fa-solid fa-music"></i>
+            </button>
+            <!-- Control Modo Oscuro -->
+            <button id="btnTheme" class="icon-btn" title="Cambiar Tema">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- INICIO / PRESENTACIÓN -->
+    <section id="inicio" class="hero section-fade">
+        <div class="hero-content">
+           <span class="tagline">Bienvenida a la experiencia</span>
+            <h1>Realza Tu Belleza Natural</h1>
+            <p>Tratamientos faciales, cuidado de uñas, maquillaje profesional y peinados diseñados especialmente para ti.</p>
+            <div class="hero-btns">
+                <a href="#reservas" class="btn btn-primary">Agendar Cita</a>
+                <a href="#servicios" class="btn btn-outline">Ver Servicios</a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=80" alt="Glow Beauty Salon">
+            </div>
+        
+        <div class="hero-image">
+            <img src="images/LOGO 2.jpeg" alt="Glow Beauty Salon">
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="section section-fade">
+        <h2 class="title-section">Nuestros Servicios</h2>
+        <p class="subtitle-section">Especialidades diseñadas para consentirte</p>
+        <div class="grid-cards">
+            <div class="card-service">
+                <i class="fa-solid fa-hand-sparkles service-icon"></i>
+                <h3>Manicura & Pedicura</h3>
+                <p>Esmaltado semipermanente, uñas en gel, acrílico y exfoliación profunda.</p>
+            </div>
+            <div class="card-service">
+                <i class="fa-solid fa-wand-magic-sparkles service-icon"></i>
+                <h3>Maquillaje Profesional</h3>
+                <p>Maquillaje social, para novias, eventos de noche y aerografía de alta duración.</p>
+            </div>
+            <div class="card-service">
+                <i class="fa-solid fa-scissors service-icon"></i>
+                <h3>Peinados & Estilo</h3>
+                <p>Ondas, recogidos elegantes, alisados y peinados para todo tipo de celebración.</p>
+            </div>
+            <div class="card-service">
+                <i class="fa-solid fa-face-smile-beam service-icon"></i>
+                <h3>Tratamientos Faciales</h3>
+                <p>Limpieza profunda, hidratación con ácido hialurónico y peeling regenerador.</p>
+            </div>
+        </div>
+    </section>
+
+     <!-- PRECIOS -->
+    <section id="precios" class="section bg-alt section-fade">
+        <h2 class="title-section">Planes y Precios</h2>
+        <p class="subtitle-section">Elige el servicio perfecto para tu día de cuidado</p>
+        <div class="grid-pricing">
+            <div class="price-card">
+                <h3>Express Glow</h3>
+                <div class="price">$35.000</div>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Manicura tradicional</li>
+                    <li><i class="fa-solid fa-check"></i> Exfoliación de manos</li>
+                    <li><i class="fa-solid fa-check"></i> Hydrating facial rápido</li>
+                </ul>
+                <a href="#reservas" class="btn btn-secondary">Reservar Este Plan</a>
+            </div>
+            <div class="price-card featured">
+                <span class="badge">Más Popular</span>
+                <h3>Glow Premium</h3>
+                <div class="price">$85.000</div>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Manicura semipermanente</li>
+                    <li><i class="fa-solid fa-check"></i> Limpieza facial profunda</li>
+                    <li><i class="fa-solid fa-check"></i> Peinado o lavado especial</li>
+                </ul>
+                <a href="#reservas" class="btn btn-primary">Reservar Este Plan</a>
+            </div>
+            <div class="price-card">
+                <h3>VIP Party / Novias</h3>
+                <div class="price">$150.000</div>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Maquillaje profesional completo</li>
+                    <li><i class="fa-solid fa-check"></i> Peinado de alta fijación</li>
+                    <li><i class="fa-solid fa-check"></i> Uñas esculpidas</li>
+                </ul>
+                <a href="#reservas" class="btn btn-secondary">Reservar Este Plan</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESERVAS -->
+    <section id="reservas" class="section section-fade">
+        <h2 class="title-section">Reserva tu Cita</h2>
+        <p class="subtitle-section">Elige la fecha y hora que mejor se adapte a tu agenda</p>
+        <div class="booking-container">
+            <form id="bookingForm" class="form-box">
+                <div class="input-group">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" required placeholder="Ej. Valeria Gómez">
+                </div>
+                <div class="input-group">
+                    <label for="telefono">Teléfono / WhatsApp:</label>
+                    <input type="tel" id="telefono" required placeholder="Ej. +57 300 000 0000">
+                </div>
+                <div class="input-group">
+                    <label for="servicio">Servicio Principal:</label>
+                    <select id="servicio" required>
+                        <option value="">Selecciona un servicio...</option>
+                        <option value="Manicura">Manicura / Pedicura</option>
+                        <option value="Maquillaje">Maquillaje Profesional</option>
+                        <option value="Peinado">Peinados & Estilo</option>
+                        <option value="Tratamiento Facial">Tratamiento Facial</option>
+                    </select>
+                </div>
+                <div class="input-group-inline">
+                    <div class="input-group">
+                        <label for="fecha">Fecha:</label>
+                        <input type="date" id="fecha" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="hora">Hora:</label>
+                        <input type="time" id="hora" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Confirmar Cita</button>
+            </form>
+            <div id="bookingConfirmation" class="confirmation-message hidden">
+                <i class="fa-solid fa-circle-check"></i>
+                <h3>¡Cita Solicitada con Éxito!</h3>
+                <p id="confirmationText"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERÍA -->
+   <section id="galeria" class="section bg-alt section-fade visible">
+    <h2 class="title-section">Nuestra Galería de Trabajos</h2>
+    <p class="subtitle-section">Haz clic sobre cualquier imagen para ampliarla y ver los detalles</p>
+    
+    <!-- Contenedor principal de la cuadrícula -->
+    <div class="gallery-grid">
+        
+        <!-- Imagen 1: Proceso de Manicura -->
+        <div class="gallery-item">
+            <img src="images/Manicura.jop.jpg" alt="Proceso de manicura profesional con herramienta de detalle" class="zoomable">
+        </div>
+
+        <!-- Imagen 2: Uñas Rosas Elegantes -->
+        <div class="gallery-item">
+            <img src="images/Manicura.jop1.jpg" alt="Manicura elegante con esmalte rosa pastel y detalle dorado" class="zoomable">
+        </div>
+
+        <!-- Imagen 3: Diseño de Uñas Mixtas -->
+        <div class="gallery-item">
+            <img src="images/Manicura.jop2.jpg" alt="Diseño de uñas moderno en tonos lila, blanco y glitter" class="zoomable">
+        </div>
+
+        <!-- Imagen 4: Productos Glow -->
+        <div class="gallery-item">
+            <img src="images/Tratamientos.jop1.jpg" alt="Colección de productos estéticos Glow" class="zoomable">
+        </div>
+
+        <!-- Imagen 5: Tratamiento Facial Detalle -->
+        <div class="gallery-item">
+            <img src="images/Tratamiento.jop3.jpg" alt="Aplicación detallada de mascarilla facial" class="zoomable">
+        </div>
+
+        <!-- Imagen 6: Tratamiento Facial Completo -->
+        <div class="gallery-item">
+            <img src="images/Tratamientos.jop.jpg" alt="Cliente recibiendo un tratamiento facial completo y relajante" class="zoomable">
+        </div>
+
+        <!-- Imagen 7: Retrato de Maquillaje Natural -->
+        <div class="gallery-item">
+            <img src="images/Maquillaje.jop.jpg" alt="Retrato de modelo con maquillaje natural y cabello castaño" class="zoomable">
+        </div>
+
+        <!-- Imagen 8: Retrato de Maquillaje Profundo -->
+        <div class="gallery-item">
+            <img src="images/Maquillaje.jop4.jpg" alt="Primer plano de maquillaje con ojos azules y labios mate" class="zoomable">
+        </div>
+
+        <!-- Imagen 9: Retrato de Maquillaje y Peinado -->
+        <div class="gallery-item">
+            <img src="images/Maquillaje.jop3.jpg" alt="Modelo con maquillaje sofisticado y peinado de ondas" class="zoomable">
+        </div>
+
+        <!-- Imagen 10: Proceso de Maquillaje Ojos -->
+        <div class="gallery-item">
+            <img src="images/Maquillaje.jop2.jpg" alt="Primer plano en blanco y negro de aplicación de sombra de ojos" class="zoomable">
+        </div>
+
+         <!-- Imagen 10: Proceso de Maquillaje Ojos -->
+        <div class="gallery-item">
+            <img src="images/Peinados..jpg" alt="Primer plano en blanco y negro de aplicación de sombra de ojos" class="zoomable">
+        </div>
+
+
+    </div>
+</section>
+
+    <!-- Modal Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span id="closeLightbox" class="close-lightbox">&times;</span>
+        <img id="lightboxImg" src="" alt="Imagen ampliada">
+    </div>
+
+    <!-- OPINIONES -->
+    <section id="opiniones" class="section section-fade">
+        <h2 class="title-section">Opiniones de Clientes</h2>
+        <p class="subtitle-section">Lo que dicen quienes ya nos visitaron</p>
+        <div class="grid-testimonials">
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>"La manicura me duró intacta más de 3 semanas. La atención de las chicas es insuperable."</p>
+                <strong>- Camila R.</strong>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>"Me maquillaron para mi graduación y quedé fascinada. El ambiente con la música de fondo es muy relajante."</p>
+                <strong>- Sofía M.</strong>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>"El tratamiento facial dejó mi piel radiante. Sin duda mi lugar favorito para consentirme."</p>
+                <strong>- Mariana L.</strong>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section bg-alt section-fade">
+        <h2 class="title-section">Contáctanos</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Glow Beauty Studio</h3>
+                <p><i class="fa-solid fa-location-dot"></i> Calle Principal # 45 - 12</p>
+                <p><i class="fa-solid fa-phone"></i> +57 300 123 4567</p>
+                <p><i class="fa-solid fa-envelope"></i> contacto@glowbeauty.com</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <form id="contactForm" class="form-box">
+                <div class="input-group">
+                    <label for="cNombre">Tu Nombre:</label>
+                    <input type="text" id="cNombre" required placeholder="Escribe tu nombre">
+                </div>
+                <div class="input-group">
+                    <label for="cMensaje">Mensaje:</label>
+                    <textarea id="cMensaje" rows="4" required placeholder="¿En qué podemos ayudarte?"></textarea>
+                </div>
+                <button type="submit" class="btn btn-secondary btn-block">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2026 Glow Beauty. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
