@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+<<<<<<< HEAD
    // 2. MÚSICA DE AMBIENTE (Reproductor de MP3)
 const musicBtn = document.getElementById("btnAudio"); 
 const backgroundAudio = document.getElementById("bg-audio");
@@ -38,6 +39,39 @@ if (musicBtn && backgroundAudio) {
         }
     });
 }
+=======
+    // 2. MÚSICA AMBIENTAL RELAJANTE (Audio Sintético mediante Web Audio API)
+    const btnAudio = document.getElementById("btnAudio");
+    let audioCtx = null;
+    let isPlaying = false;
+    let oscillator = null;
+
+    btnAudio.addEventListener("click", () => {
+        if (!isPlaying) {
+            // Iniciar tono relajante
+            audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            oscillator = audioCtx.createOscillator();
+            const gainNode = audioCtx.createGain();
+
+            oscillator.type = 'sine';
+            oscillator.frequency.setValueAtTime(432, audioCtx.currentTime); // Frecuencia de relajación 432Hz
+            gainNode.gain.setValueAtTime(0.05, audioCtx.currentTime); // Volumen suave
+
+            oscillator.connect(gainNode);
+            gainNode.connect(audioCtx.destination);
+
+            oscillator.start();
+            isPlaying = true;
+            btnAudio.style.color = "#27ae60"; // Cambia icono a verde
+        } else {
+            // Pausar música
+            if (oscillator) oscillator.stop();
+            isPlaying = false;
+            btnAudio.style.color = "var(--accent)";
+        }
+    });
+
+>>>>>>> 71e3d966a3b5d58e6e4ed57343629621e871042a
     // 3. GALERÍA CON LIGHTBOX (AMPLIAR IMÁGENES)
     const images = document.querySelectorAll(".zoomable");
     const lightbox = document.getElementById("lightbox");

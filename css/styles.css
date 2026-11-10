@@ -402,6 +402,7 @@ body {
 
 /* CONTACTO & FOOTER */
 .contact-container {
+<<<<<<< HEAD
     display: flex;
     justify-content: space-between; /* Distribuye el espacio de forma equilibrada */
     align-items: center;            /* Centra verticalmente ambos bloques */
@@ -421,10 +422,22 @@ body {
     width: 100%;
 }
 
+=======
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.contact-info {
+    text-align: left;
+}
+
+>>>>>>> 71e3d966a3b5d58e6e4ed57343629621e871042a
 .contact-info p {
     margin: 15px 0;
 }
 
+<<<<<<< HEAD
 /* Estilo ordenado para los iconos de redes sociales */
 .social-links {
     display: flex;
@@ -451,6 +464,14 @@ body {
     color: #ffffff;
     transform: translateY(-3px);
 }
+=======
+.social-links a {
+    font-size: 1.5rem;
+    color: var(--accent);
+    margin-right: 15px;
+}
+
+>>>>>>> 71e3d966a3b5d58e6e4ed57343629621e871042a
 footer {
     text-align: center;
     padding: 20px;
@@ -496,5 +517,9 @@ footer {
     .contact-container {
         grid-template-columns: 1fr;
     }
+<<<<<<< HEAD
 }
 
+=======
+}
+>>>>>>> 71e3d966a3b5d58e6e4ed57343629621e871042a
